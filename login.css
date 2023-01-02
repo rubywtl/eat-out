@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color:orange;
+}
+
+body {
+  font-size: 100%;
+  background: white;
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  width: 30%;
+  margin: 50px auto 0px;
+  color: silver;
+  background: white;
+  text-align: center;
+  border: 1px solid silver;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid silver;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  font-family: 'Poppins', sans-serif;
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.btn {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: white;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  font-family: 'Poppins', sans-serif;
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid silver; 
+  color: silver; 
+  background: white; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  font-family: 'Poppins', sans-serif;
+  color: gray; 
+  background: white; 
+  border: 1px solid silver;
+  margin-bottom: 20px;
+}
+p {
+	font-family: 'Poppins', sans-serif;
+	color: silver;
+}
