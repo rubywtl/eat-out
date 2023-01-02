@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<header>
+	<title>Eatout</title>
+</header>
+
+<body>
+	<link rel="stylesheet" href="aboutstyle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	
+	<nav>
+		<div class="logo">
+			<h3>Eatout<h3>
+		</div>
+		<ul  class="nav-links">
+			<li><a href="home.php">home</a></li>
+			<li><a href="calorie.php">choose</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a onclick="openForm()">account</a></li>
+		</ul>
+		
+		<?php
+		session_start();
+		if($_SESSION['login']==0){?>
+		<div class='form-popup' id='myForm'>
+			<form method='post' action='server.php' class='form-container'>
+				<h1>Login</h1>
+				<div class='input-group'>
+					<label>Username</label>
+					<input type='text' name='username'required >
+				</div>
+				<div class='input-group'>
+					<label>Password</label>
+					<input type='password' name='password' required>
+					<a href="register.php">Not yet a member? </a>
+				</div>
+				<div class='input-group'>
+					<button type='submit' class='btn' name='login_user'>Login</button>
+				</div>
+
+				<button type='button' class='btn cancel' onclick='closeForm()'>Close</button>
+			</form>
+		</div>
+	</nav>
+	<?php
+	}	?>
+	<script>
+	function openForm() {
+		document.getElementById("myForm").style.display = "block";
+	}
+	
+	function closeForm(){
+		document.getElementById("myForm").style.display = "none";
+		window.location.href = "home.php";
+		alert('REDIRECT\n only logged-in users can use this function');
+	}
+	</script>
+	
+	<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">
+	</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT EATOUT</span></h5>
+    <p>Eating out for lots of meals increases your risk of heart disease or stroke. A diet high in fat, cholesterol, and sugar increases one's risk of heart disease. When dining out, there are more temptations to delve into the sugary desserts and condiments, or to splurge with an entree you just can't replicate at home.
+</p>
+<br>
+    <p>You have to choose carefully about what you eat. Sadly, healthy food outside usually means higher prices. It might be hard to find the balance between calories and price, so here is Eatout!</p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"></span></h5>
+	<p></p>
+	<div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+	<video width="800px" height="450px" 
+        controls="controls"/> 
+        <source src="vid.mp4" 
+            type="video/mp4"> 
+    </video> 
+    <p><strong>created by</strong> Ruby Lee</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+</body>
+
+</html>

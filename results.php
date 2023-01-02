@@ -6,4 +6,3 @@
 	$gender=$_POST["gender"];
 	$workload=$_POST["workload"];
 	$calorie=0;
-?>

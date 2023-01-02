@@ -44,20 +44,6 @@ nav{
     color: white;
 }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: white;
-  color: white;
-  padding: 16px 20px;
-  border: silver;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -119,4 +105,57 @@ nav{
   opacity: 1;
 }
 
+input[type=number], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+input[type=number], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(169, 188, 174);
+}
+
+
+h1 {
+	font-family: 'Noto Sans', sans-serif;
+	color: black;
+	text-align: center;
+}
+
+p{
+	font-family: 'Noto Sans', ans-serif;
+	color: gray;
+	margin-left: 20px;
+}
+
+form{
+	font-family: 'Noto Sans', sans-serif;
+    color: gray;
+	text-align: center;
+}
+	

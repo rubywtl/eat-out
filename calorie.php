@@ -1,15 +1,17 @@
-<?php include('server.php') ?>
-
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-  <title>Register</title>
-  <link rel="stylesheet" type="text/css" href="registerstyle.css">
 </head>
-
 	
 <body>
+	<link rel="stylesheet" href="caloriestyle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	
 	<nav>
 		<div class="logo">
 			<h3>Eatout<h3>
@@ -22,6 +24,7 @@
 		</ul>
 		
 		<?php
+		session_start();
 		if($_SESSION['login']==0){?>
 		<div class='form-popup' id='myForm'>
 			<form method='post' action='server.php' class='form-container'>
@@ -44,11 +47,6 @@
 	</nav>
 	<?php
 	}	?>
-	
-  <div class="header">
-  	Register
-  </div>
- 
 	<script>
 	function openForm() {
 		document.getElementById("myForm").style.display = "block";
@@ -60,30 +58,27 @@
 	}
 	</script>
 	
-  <form method="post" action="server.php">
-  	<?php include('errors.php'); ?>
-  	<div class="input-group">
-  	  <label>Username</label>
-  	  <input type="text" name="username" value="<?php echo $username; ?>">
-  	</div>
-  	<div class="input-group">
-  	  <label>Email</label>
-  	  <input type="email" name="email" value="<?php echo $email; ?>">
-  	</div>
-  	<div class="input-group">
-  	  <label>Password</label>
-  	  <input type="password" name="password_1">
-  	</div>
-  	<div class="input-group">
-  	  <label>Confirm password</label>
-  	  <input type="password" name="password_2">
-  	</div>
-  	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user">Register</button>
-  	</div>
-  	<p>
-  		 <a href="index.php">Already a member?</a>
-  	</p>
-  </form>
+	<form action="calories.php" method="post">
+		<b>Age<br> <input type="number" name="age"><b><br>
+		<b>Gender<b><br>
+		<select name="gender">
+			<option value="3">select</option>
+			<option value="0">Female</option>
+			<option value="1">Male</option>
+		</select><br>
+		<b>Workload<b><br>
+		<select name="workload">
+			<option value="3">select</option>
+			<option value="0">Low</option>
+			<option value="1">Medium</option>
+			<option value="2">High</option>
+		</select><br>
+		<input type="submit">
+	</form>
+	
+	
+	
+</p>
+
 </body>
 </html>

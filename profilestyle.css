@@ -47,6 +47,7 @@ nav{
 
 {box-sizing: border-box;}
 
+/* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: white;
   color: white;
@@ -60,6 +61,7 @@ nav{
   width: 280px;
 }
 
+/* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
@@ -69,12 +71,14 @@ nav{
   z-index: 9;
 }
 
+/* Add styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;
 }
 
+/* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
   padding: 15px;
@@ -87,11 +91,13 @@ nav{
 	right:2px;
 }
 
+/* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
+/* Set a style for the submit/login button */
 .form-container .btn {
   background-color: orange;
   color: white;
@@ -103,7 +109,7 @@ nav{
   opacity: 0.8;
 }
 
-
+/* Add a red background color to the cancel button */
 .form-container .cancel {
   border: none;
   background-color: white;
@@ -111,7 +117,7 @@ nav{
   left: 2px;
 }
 
-
+/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
@@ -144,8 +150,8 @@ nav{
 }
 
 .main {
-  margin-left: 200px; 
-  font-size: 28px; 
+  margin-left: 200px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 

@@ -18,7 +18,7 @@
 		</ul>
 	</nav>
 	
-	<h5>Recommended Food Sets</h5>
+	<h5>建議食物組合</h5>
 	<?php
 		session_start();
 		require("conn.php");
