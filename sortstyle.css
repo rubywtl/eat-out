@@ -1,0 +1,220 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+	color:orange;
+	text-transform:uppercase;
+	letter-spacing: 8px;
+	font-size: 20 px;
+}
+
+.nav-links{
+	float:right;
+	display:flex;
+	width:30%;
+	justify-content: space-around;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links  a{
+	color: gray;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: rgb(115, 115, 115);
+    color: white;
+}
+
+.open-button {
+  background-color: white;
+  color: white;
+  padding: 16px 20px;
+  border: silver;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container a{
+	right:2px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  border: none;
+  background-color: white;
+  color: silver;
+  left: 2px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+}
+
+.refreshbutton{
+	background:url(refresh.jpeg) no-repeat;
+    cursor:pointer;
+    width: 20px;
+    height: 10px;
+    border: none;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.styled-table thead tr {
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+	color: gray;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/*.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid orange;
+}*/
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: orange;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th{
+	background-color:white;
+	color: orange;
+}
+
+input{
+	padding:2px 2px; 
+	border:0 none;	
+	background: transparent;
+	font-weight: bold;
+	color: gray;
+}
+
+.button-39 {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: center;
+}
+
+.button-39:hover {
+  background-color: rgb(249,250,251);
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
