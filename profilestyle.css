@@ -1,0 +1,168 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+	color:orange;
+	text-transform:uppercase;
+	letter-spacing: 8px;
+	font-size: 20 px;
+}
+
+.nav-links{
+	float:right;
+	display:flex;
+	width:30%;
+	justify-content: space-around;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links  a{
+	color: gray;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: rgb(115, 115, 115);
+    color: white;
+}
+
+{box-sizing: border-box;}
+
+.open-button {
+  background-color: white;
+  color: white;
+  padding: 16px 20px;
+  border: silver;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container a{
+	right:2px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  border: none;
+  background-color: white;
+  color: silver;
+  left: 2px;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: none;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: silver;
+  display: block;
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: silver;
+}
+
+.main {
+  margin-left: 200px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+.main p{
+	font-family: 'Poppins', sans-serif;
+	color: gray;
+	font-size: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
